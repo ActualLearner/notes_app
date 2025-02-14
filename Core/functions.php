@@ -1,5 +1,6 @@
 <?php
 
+use Core\Response;
 use Core\Router;
 
 function dd($value)
@@ -16,7 +17,7 @@ function urlIs($value)
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
-function authorize($condition, $status = Core\Response::FORBIDDEN)
+function authorize($condition, $status = Response::FORBIDDEN)
 {
     if (! $condition) {
         Router::abort($status);
