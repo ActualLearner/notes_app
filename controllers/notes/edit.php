@@ -14,5 +14,6 @@ $currentUserId = 1;
 
     view("notes/edit.view.php", [
         'heading' => 'Edit Note',
+        "errors" => [],
         'note' => $note
     ]);
