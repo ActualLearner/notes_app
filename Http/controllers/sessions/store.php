@@ -16,11 +16,14 @@ if ($form->validate($email, $password)) {
     if ($auth->attempt($email, $password)) {
         redirect("/");
     } else {
-    $form->error('email', 'No matching account found for that email and password');
+        $form->error('email', 'No matching account found for that email and password');
     }
 }
 
 Session::flash('errors', $form->errors());
+Session::flash('old', [
+    'email' => $email
+]);
 
 return redirect('/login');
 

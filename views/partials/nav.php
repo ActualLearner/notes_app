@@ -50,7 +50,7 @@
                         </div>
 
                         <div class="ml-3">
-                            <form method="POST" action="/session">
+                            <form method="POST" action="/sessions">
                                 <input type="hidden" name="_method" value="DELETE"/>
 
                                 <button class="text-white">Log Out</button>
