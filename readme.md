@@ -9,14 +9,10 @@ A simple PHP-based notes application built to practice core PHP before moving to
 
 ## 📂 Folder Structure  
 
-notes_app/
-│── Core/               # Core logic (Router, Database, Session, etc.)
-│── Http/               # Controllers for handling requests
-│── Forms/              # (Explain what this folder does)
-│── public/             # Web root (entry point: `index.php`)
-│   ├── .htaccess       # Handles routing
-│   ├── index.php       # Front controller
-│── README.md           # Documentation
+- **Core/**: Contains the core logic of the application such as routing, database interactions, and session management.
+- **Http/**: Holds the controllers that handle incoming HTTP requests and manage the business logic.
+- **Forms/**: (Explain the purpose of this folder in the context of your application, e.g., form validation, processing, etc.)
+- **public/**: This is the web root folder. It contains the `index.php`, which serves as the front controller for the application, and the `.htaccess` file to manage routing.
 
 ## 🛠 Installation
 
