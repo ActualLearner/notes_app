@@ -23,9 +23,10 @@ A simple PHP-based notes application built to practice core PHP before moving to
 2. Clone this repo inside C:/xampp/htdocs/.
 
 3. Update Apache’s httpd.conf to set DocumentRoot:
-
-DocumentRoot "C:/xampp/htdocs/notes_app/public"
-<Directory "C:/xampp/htdocs/notes_app/public">
+```
+DocumentRoot "C:/xampp/htdocs/notes_app/public 
+<Directory "C:/xampp/htdocs/notes_app/public"> 
+```
 
 4. Restart Apache & open http://localhost/ in a browser.
 
@@ -36,13 +37,13 @@ DocumentRoot "C:/xampp/htdocs/notes_app/public"
 2. Clone the repo inside /var/www/html/notes_app/.
 
 3. Update Apache’s virtual host (edit /etc/apache2/sites-available/000-default.conf):
-
+```
 DocumentRoot "/var/www/html/notes_app/public"
 <Directory "/var/www/html/notes_app/public">
-
+```
 4. Restart Apache (sudo systemctl restart apache2).
 
-Open http://localhost/ in a browser.
+    * Open http://localhost/ in a browser.
 
 ## 🌍 Routing
 
